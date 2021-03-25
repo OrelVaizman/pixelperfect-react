@@ -1,0 +1,8 @@
+@import "./src/styles/setup";
+
+.list {
+    padding: rem(250px) rem(165px) rem(200px) rem(345px);
+    margin-top: rem(-200px);
+    z-index: 1;
+    background-color: $color-red;
+}

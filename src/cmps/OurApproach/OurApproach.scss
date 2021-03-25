@@ -1,0 +1,11 @@
+
+        @import "./src/styles/setup";
+        .our-approach {
+                height: rem(900px);
+
+                padding-left: rem(165px);
+                .our-approach-desc{
+                        margin-top: rem(200px);
+                        z-index: 2;
+                }
+        }

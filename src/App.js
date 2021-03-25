@@ -1,26 +1,23 @@
 import './styles/_style.scss';
-import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 
 import Header from './cmps/Header/Header';
 import Footer from './cmps/Footer/Footer';
-import HomePage from './pages/HomePage/HomePage';
-import About from './pages/About/About';
+import OurApproach from './cmps/OurApproach/OurApproach';
+import Hero from './cmps/Hero/Hero';
+import Carousel from './cmps/Carousel/Carousel';
+import Whoarewe from './cmps/Whoarewe/Whoarewe';
 
 function App() {
-  return (
-    <div className='App'>
-      <Router>
-        <Header />
-        <main>
-          <Switch>
-            <Route path='/about' component={About} />
-            <Route path='/' component={HomePage} />
-          </Switch>
-        </main>
-        <Footer />
-      </Router>
-    </div>
-  );
+	return (
+		<div className="App">
+			<Header />
+			<Hero />
+			<Whoarewe />
+			<OurApproach />
+			<Carousel />
+			<Footer />
+		</div>
+	);
 }
 
 export default App;

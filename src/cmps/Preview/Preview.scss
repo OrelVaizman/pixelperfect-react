@@ -1,0 +1,25 @@
+@import "./src/styles/setup";
+
+.preview {
+
+
+        .item-counter {
+                font-family: 'Commissioner', sans-serif;
+                font-weight: 700;
+                font-size: rem(80px);
+                opacity: 0.25;
+                position: absolute;
+                top: 17px;
+                left: -72px;
+        }
+
+        .preview-desc {
+                color: white;
+        }
+
+        .preview-title {
+                font-weight: 700;
+                font-size: rem(20px);
+                margin-top: 40px;
+        }
+}

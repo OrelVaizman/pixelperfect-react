@@ -6,8 +6,32 @@
 
 
 html {
-  font-size: 16px;
+  font-size: 18px;
+  font-family: 'Commissioner', sans-serif;
+  line-height: 32px;
+  color: #FFFFFF;
+}
 
+h1 {
+  font-family: 'Commissioner', sans-serif;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 64px;
+  color: black;
+  margin: 0;
+  padding: 0;
+}
+
+span {
+  color: black;
+}
+
+h3 {
+  font-size: 20px;
+  line-height: 32px;
+  color: black;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -44,9 +68,9 @@ a {
   display: flex;
   flex-direction: column;
 
-  main {
-    flex-grow: 1;
-  }
+  // main {
+  //   flex-grow: 1;
+  // }
 }
 
 #root {

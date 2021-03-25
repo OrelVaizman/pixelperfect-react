@@ -1,30 +1,21 @@
 
 import React from 'react'
-import { NavLink } from 'react-router-dom'
 
 import './Menu.scss'
-import List from '../List/List';
 
 const Menu = (props) => {
-    const menuLinks = [{ txt: 'Home', src: '/' }, { txt: 'about', src: '/about' }]
     return (
-        <NavMenu>
-                {menuLinks.map(({ txt, src }, idx) => <LiLink key={idx} src={src} txt={txt} />)}
-        </NavMenu>
+        <section className="main-menu flex center-center">
+            <ul className="main-nav flex clean-list center-center">
+                <li>About</li>
+                <li>Service</li>
+                <li>Projects</li>
+                <button className="call-btn">Schedule a Call</button>
+            </ul>
+        </section>
     )
 
 
 }
 
 export default Menu
-
-const NavMenu = (props) => {
-   return( <nav className="menu">
-       <List classNames="menu-links flex flex-gap">
-            {props.children}
-        </List>
-    </nav>)
-}
-const LiLink = ({ src, txt }) => {
-    return <li className="menu-link"><NavLink exact to={src}>{txt}</NavLink></li>
-}

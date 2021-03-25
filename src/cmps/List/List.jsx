@@ -1,16 +1,17 @@
 
 import React from 'react'
+import './List.scss'
+import Preview from '../Preview/Preview';
 
-
-const Ul = (props) => {
+const List = ({ items }) => {
 
     return (
-        <ul className={`clean-list ${props.classNames ? props.classNames : ''}`}>
-            {props.children}
+        <ul className={`list clean-list flex column space-between`}>
+            {items.map((item, idx) => <Preview key={idx} item={item} idx={idx} />)}
         </ul>
     )
 
 
 }
 
-export default Ul
+export default List

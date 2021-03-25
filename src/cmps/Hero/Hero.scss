@@ -1,3 +1,27 @@
+@import "./src/styles/setup";
 
-        @import "./src/styles/setup";
-        .hero {}
+.hero {
+        width: 100%;
+
+        img {
+                width: 100%;
+        }
+
+        &.container {
+                padding-left: rem(165px);
+        }
+
+        .hero-description {
+                padding-top: rem(125px);
+                z-index: 1;
+                max-height: rem(526px);
+                max-width: rem(540px);
+                // margin-right: -35%;
+        }
+
+        .learn-more {
+                width: rem(177px);
+                height: rem(72px);
+                background-color: $color-red;
+        }
+}
